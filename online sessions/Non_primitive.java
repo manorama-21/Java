@@ -72,7 +72,7 @@ public class Non_primitive{
             // }
              
     
-    // <----------2d array ---------->
+    // <---------- Multidimentional array ---------->
              
             //  int [][] = new int[3][3];
     
