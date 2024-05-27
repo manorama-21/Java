@@ -89,6 +89,11 @@ public class Non_primitive{
                     }
             }
     
+
+            // int [] a= {13,14,15},{25,26,27};
+            // for(int i:a){
+            //     System.out.println(i);
+            // }
                
            
         }
