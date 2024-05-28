@@ -79,3 +79,8 @@ public class loops {
         // }while(a <= 10);
     }
 }
+
+
+
+
+
