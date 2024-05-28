@@ -5,7 +5,7 @@ public class userinput{
     public static void main(String[] args) {
         // java.util.Scanner a = new java.util.Scanner(System.in);
                        
-                // System.out.println("Enter your name7: ");
+                // System.out.println("Enter your name: ");
                // String name=a.nextLine();
                // // System.out.println("your name is: "+ name);
         
@@ -15,7 +15,7 @@ public class userinput{
         
         
         
-        //.....for loop....//
+        //.........for loop..........//
     
         
 Scanner a = new Scanner(System.in);
@@ -74,6 +74,7 @@ for(int i = 1; i<= 10; i++){
         
         
         //......boolean dtype....//
+        
         //  Scanner a = new Scanner(System.in);
         // System.out.println("Do you have a laptop");
         // boolean laptop = a.nextBoolean();
@@ -89,7 +90,8 @@ for(int i = 1; i<= 10; i++){
                 
 
 
-                    //......|| operator.......//
+                    //......Logical operator.......//
+        
         // if(name.equals("Manu") || name.equals("")){
         //     if(pwd.equals("123")){
         //         System.out.println("Authorised User");
@@ -99,7 +101,7 @@ for(int i = 1; i<= 10; i++){
         // }
 
 
-                     //.......&& operator......//        
+                  
         // if(name.equals("Manu") && pwd.equals("12345")){
         //     System.out.println("Authorised User");
             
@@ -107,7 +109,8 @@ for(int i = 1; i<= 10; i++){
         //     System.out.println("Unautorised");
         // }
 
-
+                    //.......comparison operator.......//
+        
         // if(name == ""){
         //     System.out.println("User Access");
         // }else{
