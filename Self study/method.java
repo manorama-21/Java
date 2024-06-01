@@ -11,7 +11,7 @@
 
 public class method {
     static void myMethod() {
-      System.out.println("My first method");
+      System.out.println("My first java method");
     }
   
     public static void main(String[] args) {
