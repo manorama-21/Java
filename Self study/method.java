@@ -11,10 +11,14 @@
 
 public class method {
     static void myMethod() {
-      System.out.println("My first method");
+      System.out.println("My first java method");
+        int a= 7;
+        int b= 9;
+        System.out.println(a+b);
     }
   
     public static void main(String[] args) {
       myMethod();
+        
     }
   }
