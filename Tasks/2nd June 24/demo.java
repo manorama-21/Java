@@ -108,9 +108,7 @@ public class demo{
         //     System.out.println("Value at index " + b + ": " + value);
         // } catch (ArrayIndexOutOfBoundsException e) {
         //     System.out.println("Error: Please enter a valid index.");
-        // } finally {
-        //     sc.close();
-        // }
+        // } 
 
 
 //Write a Java program that reads a file specified by the user. Use exception handling to catch any FileNotFoundException and IOException. 
@@ -129,9 +127,9 @@ public class demo{
             System.out.println("File not found: " + e.getMessage());
         } catch (IOException e) {
             System.out.println("Error reading the file: " + e.getMessage());
-        } finally {
-            sc.close();
-        }
+        } 
+            
+        
 
 
 
