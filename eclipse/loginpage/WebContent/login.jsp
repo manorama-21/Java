@@ -10,10 +10,16 @@
 <body>
 <div class ="container">
 <h1 class= "text-primary" style="text-align:center">Login Here....</h1>
-<form action= "" method= "post">
+<form action= "LoginServlet" method= "post">
 <div class="mb-3">
-  <label class="form-label">UserId</label>
-  <input type="text" class="form-control" name="userid">
+  <label class="form-label">UserName</label>
+  <input type="text" class="form-control" name="username">
+  
+</div>
+
+<div class="mb-3">
+  <label class="form-label">Email</label>
+  <input type="email" class="form-control" name="email">
   
 </div>
 
