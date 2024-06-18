@@ -21,41 +21,41 @@
 
               <h2 class="fw-bold mb-2 text-uppercase">REGISTRATION PAGE</h2>
 
-			<form>
+			<form action ="RegisterServlet" method="post">
 			
 			<div data-mdb-input-init class="form-outline form-white mb-4">
-                <input type="text"class="form-control form-control-lg" />
+                <input type="text"class="form-control form-control-lg" name="firstname" />
                 <label class="form-label" >FirstName</label>
               </div>
 			
 				<div data-mdb-input-init class="form-outline form-white mb-4">
-                <input type="text"class="form-control form-control-lg" />
-                <label class="form-label" >LasttName</label>
+                <input type="text"class="form-control form-control-lg"  name="lastname"/>
+                <label class="form-label" >LastName</label>
               </div>
               
               	<div data-mdb-input-init class="form-outline form-white mb-4">
-                <input type="text"class="form-control form-control-lg" />
-                <label class="form-label" >UsertName</label>
+                <input type="text"class="form-control form-control-lg" name="username"/>
+                <label class="form-label" >UserName</label>
               </div>
               
               	<div data-mdb-input-init class="form-outline form-white mb-4">
-                <input type="number"class="form-control form-control-lg" />
+                <input type="number"class="form-control form-control-lg" name="contact"/>
                 <label class="form-label" >Contact</label>
               </div>
               
               <div data-mdb-input-init class="form-outline form-white mb-4">
-                <input type="email" id="typeEmailX" class="form-control form-control-lg" />
+                <input type="email" id="typeEmailX" class="form-control form-control-lg"  name="email"/>
                 <label class="form-label" for="typeEmailX">Email</label>
               </div>
 
               <div data-mdb-input-init class="form-outline form-white mb-4">
-                <input type="password" id="typePasswordX" class="form-control form-control-lg" />
+                <input type="password" id="typePasswordX" class="form-control form-control-lg" name="password"/>
                 <label class="form-label" for="typePasswordX">Password</label>
               </div>
 
            
 
-              <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-light btn-lg px-5" type="submit">Registered Now</button>
+              <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-light btn-lg px-5" type="submit" onclick="return Submit();">Registered Now</button>
 
           
 

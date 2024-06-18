@@ -7,7 +7,7 @@
 <title>LoginPage</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
-<!-- <link ref ="stylesheet" type="text/css" href ="style.css"> -->
+
 </head>
 <body>
 
@@ -23,28 +23,29 @@
             
 			<form action ="LoginServlet" method="post">
               <div data-mdb-input-init class="form-outline form-white mb-4">
-                <input type="email" id="typeEmailX" class="form-control form-control-lg" />
+                <input type="email" id="typeEmailX" class="form-control form-control-lg" name="email" />
                 <label class="form-label" for="typeEmailX">Email</label>
               </div>
 
               <div data-mdb-input-init class="form-outline form-white mb-4">
-                <input type="password" id="typePasswordX" class="form-control form-control-lg" />
+                <input type="password" id="typePasswordX" class="form-control form-control-lg" name="password"/>
                 <label class="form-label" for="typePasswordX">Password</label>
               </div>
 
           
 
-              <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-light btn-lg px-5" type="submit">Login Now</button>
+              <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-light btn-lg px-5" type="submit" onclick="return Submit();">Login Now</button>
 
           
 
             </div>
 
             <div>
-            </form>
+          
               <p class="mb-0">Don't have an account? <a href="register.jsp" class="text-white-50 fw-bold">Register Here.....</a>
               </p>
             </div>
+              </form>
 
           </div>
         </div>

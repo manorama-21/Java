@@ -1,6 +1,9 @@
 package com.jav;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,18 +19,22 @@ public class LoginServlet extends HttpServlet {
   
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-	String email =request.getParameter("email");
-	String password = request.getParameter("password");
-	
-	if(userDao.isValidUSer(email, password)) {
-		HttpSession session =request.getSession();
-		session.setAttribute("email", email);
-		response.sendRedirect(" ");
 		
-	}else {
-		response.sendRedirect("login.jsp");
-		System.err.println(" Error");
-	}
+		response.setContentType("text/jsp");
+		PrintWriter outPrintWriter = response.getWriter();
+		
+		String email =request.getParameter("email");
+		String password = request.getParameter("password");
+	
+		if(LoginPage.validate(email,password)) {
+			RequestDispatcher rd = request.getRequestDispatcher("success");
+			rd.include(request, response);
+		}else {
+			System.out.println("Try again. Please type valid emal or password");
+			RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
+			rd.include(request, response);
+		}
+
 	}
 
 }
