@@ -10,11 +10,11 @@ public class variables {
 
 //-------------------static variable-------------//
 
-    // static int a = 20;
+    // static int a = 30;
     // public static void main(String[] args) {
     //        System.out.println(variables.a);
 
-        //output: 20
+        //output: 30
         
     
 //------------------instance variable---------------//
