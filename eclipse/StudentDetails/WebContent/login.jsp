@@ -23,12 +23,12 @@
             
 			<form action ="LoginServlet" method="post">
               <div data-mdb-input-init class="form-outline form-white mb-4">
-                <input type="email" id="typeEmailX" class="form-control form-control-lg" name="email" />
+                <input type="email" id="typeEmailX" class="form-control form-control-lg" name="email" required="required"/>
                 <label class="form-label" for="typeEmailX">Email</label>
               </div>
 
               <div data-mdb-input-init class="form-outline form-white mb-4">
-                <input type="password" id="typePasswordX" class="form-control form-control-lg" name="password"/>
+                <input type="password" id="typePasswordX" class="form-control form-control-lg" name="password"  required="required"/>
                 <label class="form-label" for="typePasswordX">Password</label>
               </div>
 
