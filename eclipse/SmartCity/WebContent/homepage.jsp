@@ -3,78 +3,116 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Home page</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<title>My Home Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+	*{
+	margin: 0px;
+	padding: 0px;
+}
 
-
- <style>
-/* body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-	background-image:url("https://t4.ftcdn.net/jpg/05/05/51/25/360_F_505512599_D6ulJI9hV6aGTP04FPC2XDk5QHGOQtpW.jpg");
-	background-repeat:no-repeat;
-	background-size:100%;
+header{
+	width: 100%;
+	height: 100vh;
+	background-image: url("https://t4.ftcdn.net/jpg/05/05/51/25/360_F_505512599_D6ulJI9hV6aGTP04FPC2XDk5QHGOQtpW.jpg");
+	background-size: cover;
 	
 }
- */
-.container {
-	background-image:url("https://t4.ftcdn.net/jpg/05/05/51/25/360_F_505512599_D6ulJI9hV6aGTP04FPC2XDk5QHGOQtpW.jpg");
-	background-repeat:no-repeat;
-	background-size:100%;
-	/* color:white;
-	postion:relative;
-	text-align:center; */
 
-} 
-
- 
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
+.header_menu{
+	width: 100%;
+	height: 60px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color:black;
+	box-shadow: -2px -2px 20px -2px black; 
 }
 
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.logo h1{
+	
+	color: white;
+	margin-left: 70px;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.menu_list{
+	width: 80%;
+	text-align: right;
+	padding-right: 50px;
+
 }
 
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
+.menu_list li{
+	display: inline-block;
+	text-transform: uppercase;
+	list-style: none;
+	letter-spacing: 2px;
+	padding-left: 50px;
 }
-</style> 
 
+.menu_list li a{
+	text-decoration: none;
+	color: white;
+}
+
+.menu_list li a:hover{
+	color: yellow;
+}
+
+.header_content{
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.header_content h2{
+	margin-bottom: 50px;
+	font-size: 17px;
+	font-weight: 200px;
+	letter-spacing: 0.3em;
+	color: white;
+}
+
+.header_content h1{
+	margin-bottom: 50px;
+	font-size: 70px;
+	font-weight: 500px;
+	letter-spacing: 0.5em;
+	color: white;
+}
+
+
+	</style>
+	
 </head>
 <body>
+<header>
+	<div class="header_menu">
+		<div class="logo">
+		<img alt="Homepage" src="https://st2.depositphotos.com/1874273/6290/v/950/depositphotos_62907815-stock-illustration-tourist-guide-logo.jpg" style="width:50px;height:50px;position:absolute;left:20px;top:7px">
+			
+		</div>
+		<div class="menu_list">
+			<ul>
+				<li><a href="##">Home</a></li>
+				<li><a href="city_profile.jsp">City-Profile</a></li>
+				<li><a href="##">Gallery</a></li>
+				<li><a href="contact.jsp">Contact-Us</a></li>
+			
+			</ul>
+		</div>
+	</div>
 
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">City-Profile</a>
-  <a href="#contact">Photograph</a>
-  <a href="#about">Contact</a>
-</div>
+	<div class="header_content">
+		<h1>SMART CITY</h2>
+		<h2>( CITY GUIDE )</h1>
 
-<div class="container">
-<div>
-<h1 style="position:absolute; top:40%; left:30%; font-size:120px; ">SMART CITY</h1>
-<p  style="position:absolute; top:55%; left:50%; font-size:60px">(CITY GUIDE)</p>
-</div>
-
-</div>
-
-
-
+		<!-- <button><a href="##">CONTACT</a></button> -->
+	</div>
+</header>
 </body>
 </html>
