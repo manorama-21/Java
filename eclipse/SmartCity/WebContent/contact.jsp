@@ -62,6 +62,7 @@ body {
 }
 
 
+
 /* Header styles */
 header {
 	display: flex;
@@ -116,7 +117,7 @@ nav ul li a:hover {
 /* banner section styles */
 .banner {
 	text-align: center;
-	background-color: #ffffff;
+	color:white;
 	margin: 0 auto;
 	
 }
@@ -174,59 +175,24 @@ nav ul li a:hover {
 /* Contact info styles */
 .contact-info {
 	text-align: center;
-	padding: 50px 0;
-	background-color: #f7f7f7;
+	padding: 30px 0;
+	color:white;
 }
 
 .contact-info h2 {
 	margin-bottom: 20px;
 }
-
-/* Footer styles */
-footer {
-	padding: 20px;
-	text-align: center;
-	background-color: #333;
-	color: white;
-}
-/* Hamburger styles */
-.hamburger {
-	display: none;
-	color: rgb(0, 0, 0);
-	font-size: 1.5rem;
-	cursor: pointer;
+.contact-info a {
+	color:lightblue;
 }
 
-/* Media queries for responsiveness */
-@media only screen and (max-width: 768px) {
-	.logo {
-		display: none;
-	}
 
-	.hamburger {
-		display: flex;
-	}
-
-	#nav-menu {
-		position: absolute;
-		top: 4rem;
-		left: 0;
-		background-color: #333;
-		width: 100%;
-		display: none;
-	}
-
-	#nav-menu.active {
-		display: block;
-		flex-direction: row;
-		padding: 1rem;
-	}
-}
 
 </style>
 
 </head>
 <body>
+
 
 <header>
 	<div class="header_menu">
@@ -246,11 +212,11 @@ footer {
 		</div>
 	</div>
 	</header>
-	
+
 <section class="banner">
         <img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20230822131732/images.png"
-            alt="Welcome to our Contact Us page">
+"https://icon-library.com/images/feedback-icon-png/feedback-icon-png-28.jpg" width="100" height="100">
+           
         <h1>GIVE US FEEDBACK</h1>
        
     </section>
@@ -282,13 +248,13 @@ footer {
     <section class="contact-info">
         <h2>CONTACT INFORMATION</h2>
         <address>
-            <br>
+            
         			Nsti Allahabad<br>
             Phone: <a href="tel:1234567890">123-456-7890</a><br>
             Email: <a href="mailto:info@example.com">info@example.com</a>
         </address>
     </section>
 
- 
+
 </body>
 </html>
