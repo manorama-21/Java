@@ -4,14 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HTML5 Form with Validation</title>
-<style>
-    .form-group {
-        margin-bottom: 15px;
-    }
-    .error {
-        color: red;
-    }
-</style>
+
 </head>
 <body>
 
@@ -81,27 +74,7 @@
 
 </form>
 
-<script>
-    // Example JavaScript validation (client-side)
-    document.getElementById('myForm').addEventListener('submit', function(event) {
-        var nameInput = document.getElementById('name');
-        if (nameInput.value.length < 3 || nameInput.value.length > 20) {
-            alert('Name must be between 3 and 20 characters.');
-            event.preventDefault(); // prevent form submission
-            return false;
-        }
 
-        var pinInput = document.getElementById('pin-code');
-        var pinPattern = /^[0-9]{6}$/;
-        if (!pinPattern.test(pinInput.value)) {
-            alert('Please enter a valid 6 digit PIN code.');
-            event.preventDefault(); // prevent form submission
-            return false;
-        }
-
-        // Additional validation can be added similarly for other fields if needed
-    });
-</script>
 
 </body>
 </html>
